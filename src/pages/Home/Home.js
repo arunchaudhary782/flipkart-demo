@@ -76,7 +76,7 @@ function Home(){
                 <Container fluid className="mt-1" >
                     <Row>
                         <Col md={10} className="sliderrow">
-                            <h4 className="mt-2">Best Of Maderchod</h4>
+                            <h4 className="mt-2">Best Of Chaurasiya</h4>
                             <DynamicSlider data={products} cols={5}/>
                         </Col>
                         <Col md={2}>
