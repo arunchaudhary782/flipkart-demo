@@ -1,0 +1,13 @@
+.menuContainer{
+    background-color: #FFF;
+    margin: 10px;
+    padding: 20px;
+}
+.thumb{
+    width: 70px;
+    height: 70px;
+   
+}
+.thumbtext{
+    font-weight: 600;
+}

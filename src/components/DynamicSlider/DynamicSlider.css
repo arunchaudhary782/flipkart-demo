@@ -1,0 +1,39 @@
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1 !important;
+    width:45px !important;
+    height: 100px !important;
+    background-color: white !important;
+    top: calc(50% - 50px) !important;
+}
+
+
+.carousel-control-next{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 10px !important;
+}
+
+.carousel-control-prev{
+    left: 10px !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(100%) !important;
+}
+.slidestext{
+    text-align: center;
+}
+.mycard{
+    border: 1px solid #CCC;
+    margin: 0%;
+}
+.card-img-top{
+    height: 140px !important;
+    max-width: 185px;
+
+}
+.slick-prev:before, .slick-next:before {
+    color: blue !important;
+}

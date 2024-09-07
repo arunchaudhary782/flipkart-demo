@@ -1,0 +1,94 @@
+.myNavbar{
+    background-color: #FFF;
+}
+.menuContainer{
+    background-color: #FFF;
+    margin: 10px;
+    padding: 20px;
+}
+.inputvalue{
+    width: 600px;
+    height: 40px;
+    background:url('../../assets/imgs/search.png');
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    border: 1px solid #CCC;
+    background-color: #f0f5ff;
+    border-radius: 7px;
+    margin-left: 20px;
+    padding-left: 50px;
+    font-size: large;
+}
+
+.logo{
+    margin-top: 2px;
+ }
+.list{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+.list li{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.thumb{
+    width: 70px;
+    height: 70px;
+   
+}
+.thumbtext{
+    font-weight: 600;
+}
+
+.myCard{
+    width: 200px;
+    background-color: white;
+    height: 100%;
+    margin: auto;
+}
+
+.card-img-top{
+    width: auto !important;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px !important ;
+}
+.list li:hover .arrow{
+    transform: rotate(180deg);
+    transition: 0.2s all;
+}
+.arrow{
+    width: 12px;
+        
+}
+
+.textcenter{
+    text-align: center;
+}
+.list{
+    position: relative;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    margin:0;
+    padding:0px;
+    border: 1px solid #CCC;
+    z-index: 10000;
+    border-radius: 10px;
+}
+.submenu li{
+    padding: 5px;
+}
+.list li:hover .submenu{
+    display: block;
+}
