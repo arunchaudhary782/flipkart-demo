@@ -7,7 +7,7 @@ function IconMenu({iconMenu}){
     return(
         <>
          <div className="menuContainer">
-                <Container>
+                <Container fluid>
                     <Row>
                         {
                             iconMenu?.map((menu)=>{

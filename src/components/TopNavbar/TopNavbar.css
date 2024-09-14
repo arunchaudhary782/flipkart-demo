@@ -92,3 +92,9 @@
 .list li:hover .submenu{
     display: block;
 }
+
+.navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-evenly;
+}

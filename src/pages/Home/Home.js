@@ -5,31 +5,20 @@ import Slider from "../../components/Slider/Slider";
 import { useState, useEffect } from "react";
 import DynamicSlider from "../../components/DynamicSlider/DynamicSlider";
 import './Home.css'
+import LoginPage from "../../components/LoginPage/LoginPage";
 
 function Home(){
-
-    const [navMenu, setNavMenu] = useState();
     const [iconMenu, setIconMenu] = useState();
     const [slides, setSlides ] = useState();
     const [products, setProducts] = useState();
     const [productList, setProductlist] = useState();
 
     useEffect(()=>{
-        fetchMenu();
         fetchIconMenu();
         fetchSlider();
         fetchProducts();
         fetchProductlist();
     }, []);
-
-    const fetchMenu = ()=>{
-        const url = "https://demo2261803.mockable.io/getMenu";
-        fetch(url)
-            .then((res) => res.json())
-            .then((response) => {
-                setNavMenu(response.menu);
-        });
-    }
 
     const fetchIconMenu = ()=>{
         const url = "https://demo2261803.mockable.io/iconMenu";
@@ -69,14 +58,13 @@ function Home(){
 
     return (
         <>
-            <TopNavbar menu={navMenu}/>
             <IconMenu iconMenu={iconMenu}/>
             <Slider slide={slides}/>
             <section className="slidesection">
                 <Container fluid className="mt-1" >
                     <Row>
                         <Col md={10} className="sliderrow">
-                            <h4 className="mt-2">Best Of Chaurasiya</h4>
+                            <h4 className="mt-2">Best Of Electronic </h4>
                             <DynamicSlider data={products} cols={5}/>
                         </Col>
                         <Col md={2}>
@@ -94,7 +82,6 @@ function Home(){
                     </Row>
                 </Container>
             </section>
-            {/* <CarouselsSlider/> */}
         </>
     )
 }
