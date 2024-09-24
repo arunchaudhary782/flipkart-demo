@@ -1,0 +1,16 @@
+.box{
+    background-color:#6c757d;
+    border: 20px black;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    color: white;
+}
+.description{
+    color: white;
+}
+.content{
+    padding: 10px;
+}
+

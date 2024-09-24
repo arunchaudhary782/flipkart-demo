@@ -1,11 +1,10 @@
 import { Row, Col, Container } from "react-bootstrap";
-import TopNavbar from "../../components/TopNavbar/TopNavbar";
 import IconMenu from "../../components/IconMenu/IconMenu";
 import Slider from "../../components/Slider/Slider";
 import { useState, useEffect } from "react";
 import DynamicSlider from "../../components/DynamicSlider/DynamicSlider";
 import './Home.css'
-import LoginPage from "../../components/LoginPage/LoginPage";
+import MyCard from "../../components/MyCard/MyCard";
 
 function Home(){
     const [iconMenu, setIconMenu] = useState();
@@ -69,6 +68,20 @@ function Home(){
                         </Col>
                         <Col md={2}>
                             <img className="img-fluid" src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/32e8514665f65267.jpg?q=20  " />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={6}>
+                            <MyCard
+                                src={'https://cdn.dribbble.com/users/1346218/screenshots/7052546/media/7e914a81876bbca9b80cc07004f510e5.png'}
+                                width={'200px'}
+                                    height={'200px'}    
+                                text={"Batman"}
+                                display={'Flex'}
+                                direction={'row'}
+                                
+                                textp={"The 2024 Summer Paralympics, also known as the Paris 2024 Paralympic Games, and branded as Paris 2024, is the 17th Summer Paralympic Games, an international multi-sport parasports event governed by the International Paralympic"}
+                                />
                         </Col>
                     </Row>
                 </Container>

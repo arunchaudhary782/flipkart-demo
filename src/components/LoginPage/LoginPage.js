@@ -1,7 +1,6 @@
 
 import { Container, Col } from 'react-bootstrap';
 import arrowlogo from './arrowlogo.png'
-import Login from './Login.png'
 import './LoginPage.css';
 
 
@@ -52,7 +51,10 @@ function LoginPage({ menu }) {
                             </div>
                             <div class="main-form">
                                 <div>
-                                    <input type="text" placeholder="Enter Email/Mobile number" />
+                                    <div className='myInput'>
+                                        <input type="text" id="mob"/>
+                                        <label className='materialLable' for="mob">Enter mobile number</label>
+                                    </div>
                                     <div class="sub2-text">
                                         By continuing, you agree to Flipkart's
                                         <a href="/">Terms of Use</a> and 

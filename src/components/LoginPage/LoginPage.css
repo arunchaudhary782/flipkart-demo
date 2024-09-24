@@ -74,4 +74,20 @@ a {
     height: 50px;
     margin-top: 15px;
 }
-
+.materialLable{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.2s all;
+    opacity: 1;
+}
+#mob:focus+label{
+    bottom: 30px;
+    opacity: 1;
+}
+#mob:visited+label{
+    opacity: 0;
+}
+.myInput{
+    position: relative;;
+}
