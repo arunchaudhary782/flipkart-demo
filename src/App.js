@@ -7,7 +7,7 @@ import TopNavbar from './components/TopNavbar/TopNavbar';
 import LoginPage from './components/LoginPage/LoginPage';
 import ProductPage from './components/ProductPage/ProductPage';
 import MyCard from './components/MyCard/MyCard';
-
+import Shop from './components/Shop/Shop';
 function App() {
   const [navMenu, setNavMenu] = useState();
 
@@ -26,15 +26,16 @@ function App() {
 
   return (
     <>
-      <TopNavbar menu={navMenu}/>
+      {/* <TopNavbar menu={navMenu}/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/login' element={<LoginPage/>} />
-        <Route path='*' element={<Navigate to='/' />} />
-      </Routes>
+        <Route path='*' element={<Navigate to='/' />} /> */}
+      {/* </Routes> */}
       {/* <ProductPage/> */}
       {/* <ButtonClick/> */}
       {/* <MyCard/> */}
+      <Shop/>
     
     
 

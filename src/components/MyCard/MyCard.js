@@ -1,6 +1,6 @@
 import './MyCard.css'
 
-function MyCard ({src,text,textp,height,width,display,direction}){
+function MyCard ({src,text,textp,direction}){
 
     const boxStyle = {
         width : direction=="row" ? 'auto' : 'inherit',
@@ -15,6 +15,7 @@ function MyCard ({src,text,textp,height,width,display,direction}){
 
     return(
 
+                    
         <>
             <div className='box' style={boxStyle}>
                 <img src={src} style={imgStyle}/>
